@@ -27,7 +27,7 @@ The image is a saved screenshot, so it does not update automatically when the si
 3. Open the Developer Tools command menu (**Cmd+Shift+P** on macOS, **Ctrl+Shift+P** on Windows/Linux) and choose **Capture screenshot**.
 4. Save the image as `public/images/preview.png`, replacing the existing file, then commit it with the README and your other changes.
 
-The relative image link above works directly on GitHub; visitors don't need your local server to see the screenshot. Once Pages is deployed, you can also add the published URL here as a live demo link.
+The relative image link above works directly on GitHub; visitors don't need a deployed website or your local server to see the screenshot. Publishing a personal copy with GitHub Pages is optional.
 
 ## Start your own website
 
@@ -38,19 +38,48 @@ The relative image link above works directly on GitHub; visitors don't need your
 5. Upload your CV and resume as `public/documents/cv.pdf` and `public/documents/resume.pdf`, replacing the sample PDFs. The CV/Resume toggle and download links work automatically. Replace or remove sample publications and documents.
 6. Choose your colors and fonts as described below, then publish.
 
-## Deploy on GitHub Pages
+## Enable GitHub Pages on your own copy
 
-1. Push your files to your repository's default branch (usually `main`).
-2. Open **Settings → Pages → Build and deployment**.
-3. Choose **Deploy from a branch**, select your default branch and **/(root)**, then **Save**.
-4. Wait for GitHub's Pages deployment to finish. The Pages settings screen will show your published URL:
-   - Personal repository: `https://YOUR-USERNAME.github.io/`
-   - Project repository: `https://YOUR-USERNAME.github.io/REPOSITORY-NAME/`
-5. Subsequent pushes to that branch update the site automatically.
+Create your own repository with **Use this template → Create a new repository**, select your GitHub account as the owner, and personalize the files. Cloning alone does not create a repository under your account. Each owner enables Pages separately; the template owner's Pages settings are not copied.
 
-Keep `.nojekyll` in the repository root to serve these static files without Jekyll processing. All local asset links are relative so both URL formats work. Don't change them to `/public/...`: that breaks project sites hosted under a repository path.
+Commit and push your files first, then open **your new repository's Settings**:
+
+| Location | Setting | Value |
+| --- | --- | --- |
+| General → Repository name | Name | `YOUR-USERNAME.github.io` for a personal root site, or a name such as `academic-profile` for a project site |
+| General → Danger Zone | Repository visibility | Public for GitHub Free; private-repository Pages availability depends on your plan |
+| Pages → Build and deployment | Source | **Deploy from a branch** |
+| Pages → Build and deployment | Branch | **main**, or the branch containing your website files |
+| Pages → Build and deployment | Folder | **/(root)** |
+| Pages → Custom domain | Domain | Leave blank unless you own and configure a custom domain |
+| Pages | Enforce HTTPS | Enable when available |
+
+1. In **Settings → Pages**, choose the source, branch, and folder above, then click **Save**. The branch must already exist and contain `index.html`.
+2. Wait for the Pages deployment to finish. Check the repository's **Actions** tab if you need to inspect progress or a failure. You do not need to create a custom workflow for this template.
+3. Return to **Settings → Pages** and use the published URL shown there:
+   - Repository named `YOUR-USERNAME.github.io`: `https://YOUR-USERNAME.github.io/`
+   - Any other repository name: `https://YOUR-USERNAME.github.io/REPOSITORY-NAME/`
+4. Open your site and check the portrait, profile links, CV, and resume. Subsequent pushes to the selected branch update the site automatically.
+
+Your URL uses **your** GitHub username and repository name. The template creator's identity is only a separate attribution in the footer and license. Replace the sample name, metadata, contact details, and social profile links in `index.html` before publishing.
+
+Keep `.nojekyll` in the repository root to serve these static files without Jekyll processing. Keep local asset links relative (`public/images/...`, not `/public/images/...`) so both URL formats work. No build command, package installation, custom workflow, or access token is required for branch-based publishing.
 
 See GitHub's official [publishing source instructions](https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site) and [site creation guide](https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-github-pages-site). For a custom domain, follow [GitHub's domain guide](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site); don't add a `CNAME` until you own and configure the domain.
+
+## Keep the template repository unpublished
+
+The template can be shared using its GitHub repository URL and the screenshot above; a deployed demo is optional. The template owner should leave **Settings → General → Template repository** enabled so others can create their own copies.
+
+To disable an existing Pages site without removing the repository or template files:
+
+1. Open the template repository's **Settings → Pages**.
+2. Under **Build and deployment → Source**, select **Deploy from a branch**, even if it previously used GitHub Actions.
+3. Set **Branch** to **None** and click **Save**.
+
+This disables Pages publishing for this repository. People using the template can still enable Pages on their own repositories with the instructions above. There is no custom deployment workflow in this starter to remove. Local previews and the README screenshot continue to work.
+
+Changing the README does not change GitHub's settings; the repository owner must complete the steps above. See GitHub's [instructions for disabling a Pages site by changing its source](https://docs.github.com/en/pages/getting-started-with-github-pages/deleting-a-github-pages-site#deleting-your-site-by-changing-the-source).
 
 ## Preview and requirements
 
@@ -134,4 +163,4 @@ LICENSE                     MIT license and creator attribution
 
 This template is released under the [MIT License](LICENSE). Keep the license and its copyright notice when distributing the template or substantial portions of it. The footer credits Jonathan Ma as the template creator; you may adapt the visible footer, while preserving the license notice. Your own content remains yours.
 
-No deployment has been performed by this starter. Enabling template mode and Pages are repository settings you configure on GitHub.
+Template mode and Pages publishing are independent repository settings. Share the template repository and its README preview, and enable Pages only on repositories you want to publish.
