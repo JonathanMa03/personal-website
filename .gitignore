@@ -1,0 +1,21 @@
+# Operating systems and editors
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*~
+# Local dependencies, caches, and build output
+node_modules/
+.venv/
+__pycache__/
+*.py[cod]
+.cache/
+dist/
+coverage/
+*.log
+# Credentials and machine-local configuration
+.env
+.env.*
+!.env.example
+*.pem

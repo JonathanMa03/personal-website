@@ -1,0 +1,2 @@
+/* Default palette. Choose with data-color="ocean" in index.html. */
+:root, [data-color="ocean"] { --background: #faf9f6; --surface: #edf2f2; --text: #202f36; --muted: #52636b; --accent: #236575; --on-accent: #ffffff; --border: #d8dfdf; }

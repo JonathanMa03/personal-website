@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en" data-color="ocean" data-font="editorial">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Your Name — research, publications, teaching, and selected work.">
+  <meta name="color-scheme" content="light">
+  <title>Your Name · Research & ideas</title>
+  <link rel="icon" href="public/logos/mark.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styling/colors/ocean.css">
+  <link rel="stylesheet" href="styling/colors/forest.css">
+  <link rel="stylesheet" href="styling/colors/plum.css">
+  <link rel="stylesheet" href="styling/fonts/editorial.css">
+  <link rel="stylesheet" href="styling/fonts/modern.css">
+  <link rel="stylesheet" href="styling/fonts/classic.css">
+  <link rel="stylesheet" href="styling/main.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header wrap">
+    <a class="wordmark" href="./">YN<span> / academic portfolio</span></a>
+    <nav aria-label="Main navigation">
+      <a href="#about">About</a><a href="#research">Research</a><a href="#publications">Publications</a><a href="#teaching">Teaching</a><a href="#contact">Contact</a>
+    </nav>
+  </header>
+  <main id="main" class="wrap">
+    <section id="about" class="hero" aria-labelledby="intro-title">
+      <div>
+        <p class="eyebrow">Your department · Your university</p>
+        <h1 id="intro-title">Your Name<span class="accent">.</span></h1>
+        <p class="intro">Exploring ideas.<br>Building understanding.</p>
+        <p class="bio">I’m a researcher studying the intersection of <strong>your field</strong> and <strong>your interests</strong>. My work asks how we can turn thoughtful questions into meaningful discoveries.</p>
+        <div class="actions"><a class="button" href="#research">Explore my research <span aria-hidden="true">↗</span></a><a href="#career-documents">CV &amp; resume <span aria-hidden="true">↓</span></a></div>
+        <p class="availability"><span aria-hidden="true">●</span> Open to research collaborations</p>
+      </div>
+      <figure class="portrait"><img src="public/images/profile-placeholder.svg" alt="Illustrated profile placeholder; replace with your portrait" width="480" height="560"><figcaption>A little curiosity goes a long way.</figcaption></figure>
+    </section>
+    <!-- EDIT DOCUMENTS: replace cv.pdf and resume.pdf in public/documents/; keep these filenames to avoid editing links. -->
+    <section id="career-documents" class="section" aria-labelledby="documents-title">
+      <div class="section-heading"><p class="eyebrow">Background &amp; experience</p><h2 id="documents-title">CV &amp; resume</h2><p>A detailed academic history or a brief professional overview.</p></div>
+      <div class="document-toggle" role="group" aria-label="Choose a document" hidden>
+        <button type="button" aria-pressed="true" aria-controls="cv-panel" data-document="cv-panel">CV</button>
+        <button type="button" aria-pressed="false" aria-controls="resume-panel" data-document="resume-panel">Resume</button>
+      </div>
+      <div id="cv-panel" class="document-panel" aria-labelledby="cv-title">
+        <h3 id="cv-title">Curriculum vitae</h3><p>Education, research, publications, teaching, and service.</p>
+        <a class="button" href="public/documents/cv.pdf">Open CV (PDF) <span aria-hidden="true">↗</span></a>
+        <a class="download-link" href="public/documents/cv.pdf" download>Download CV</a>
+      </div>
+      <div id="resume-panel" class="document-panel" aria-labelledby="resume-title">
+        <h3 id="resume-title">Resume</h3><p>A concise overview of experience, skills, and selected achievements.</p>
+        <a class="button" href="public/documents/resume.pdf">Open resume (PDF) <span aria-hidden="true">↗</span></a>
+        <a class="download-link" href="public/documents/resume.pdf" download>Download resume</a>
+      </div>
+    </section>
+    <section class="section news" aria-labelledby="news-title"><div class="section-heading"><p class="eyebrow">The latest</p><h2 id="news-title">Notes & news</h2></div><div class="news-list"><article><time datetime="2026-09">Sep 2026</time><p><span class="tag">Example</span> Share a recent paper, milestone, or upcoming talk here.</p></article><article><time datetime="2026-08">Aug 2026</time><p>Welcome to my new academic home on the web. Replace this sample news with your own.</p></article></div></section>
+    <section id="research" class="section" aria-labelledby="research-title"><div class="section-heading"><p class="eyebrow">Questions that drive me</p><h2 id="research-title">Selected research</h2><p>Introduce the themes that connect your work.</p></div><div class="cards"><article class="card"><span class="number">01 /</span><h3>Your first research theme</h3><p>Describe a question you are investigating, why it matters, and the methods you use to explore it.</p><a href="#publications">Related publications <span aria-hidden="true">↗</span></a></article><article class="card"><span class="number">02 /</span><h3>Your second research theme</h3><p>Explain another area of your work in language that is accessible to collaborators beyond your discipline.</p><a href="#contact">Let’s collaborate <span aria-hidden="true">↗</span></a></article></div></section>
+    <section id="publications" class="section" aria-labelledby="publications-title"><div class="section-heading"><p class="eyebrow">Ideas in print</p><h2 id="publications-title">Selected publications</h2><p>Example entries — replace with your own work and links.</p></div><ol class="publications"><li><span class="pub-year">2026</span><div><h3>A descriptive title for your latest research paper</h3><p><strong>Your Name</strong>, Collaborator One, and Collaborator Two</p><p class="muted"><em>Journal or Conference Name</em> · Example publication</p><a href="public/documents/sample-abstract.html">Read sample abstract <span aria-hidden="true">↗</span></a></div></li><li><span class="pub-year">2025</span><div><h3>Another question worth investigating</h3><p>Collaborator One and <strong>Your Name</strong></p><p class="muted"><em>Journal or Conference Name</em> · Example publication</p><p>Add a DOI, preprint, code, or dataset link here.</p></div></li></ol></section>
+    <section id="teaching" class="section" aria-labelledby="teaching-title"><div class="section-heading"><p class="eyebrow">Learning together</p><h2 id="teaching-title">Teaching & mentorship</h2></div><div class="teaching-row"><div><h3>Introduction to Your Subject</h3><p>Instructor · Your University</p></div><span class="muted">Fall 2026 · Example course</span></div><p>I enjoy helping students connect foundational ideas with real-world questions. Add your teaching philosophy, courses, and mentorship interests here.</p></section>
+    <section id="contact" class="contact section" aria-labelledby="contact-title"><p class="eyebrow">Start a conversation</p><h2 id="contact-title">Good work starts<br>with a hello.</h2><p>Interested in a shared question or a possible collaboration?</p><a class="button" href="mailto:you@example.com">you@example.com <span aria-hidden="true">↗</span></a><p class="contact-links"><a href="https://scholar.google.com/">Google Scholar</a><!-- EDIT SOCIAL LINKS: replace each href with your own profile URL. -->
+        <a href="https://www.linkedin.com/"><img src="public/logos/linkedin.svg" width="20" height="20" alt="" aria-hidden="true">LinkedIn</a>
+        <a href="https://github.com/"><img src="public/logos/github.svg" width="20" height="20" alt="" aria-hidden="true">GitHub</a>
+        <a href="https://orcid.org/"><img src="public/logos/orcid.svg" width="20" height="20" alt="" aria-hidden="true">ORCID</a></p></section>
+  </main>
+  <footer class="wrap"><p>© <span id="year">2026</span> Your Name</p><p>Template created by <a href="https://github.com/JonathanMa03">Jonathan Ma</a>.</p></footer>
+  <script src="public/site.js" defer></script>
+</body>
+</html>

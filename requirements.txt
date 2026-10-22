@@ -1,0 +1,2 @@
+# No Python packages are required.
+# Optional local preview uses Python 3's built-in http.server module.
