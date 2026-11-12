@@ -1,0 +1,9 @@
+[data-color="terracotta"] {
+  --background: #fcf8f4;
+  --surface: #f3e8df;
+  --text: #3e302b;
+  --muted: #705b50;
+  --accent: #98472f;
+  --on-accent: #ffffff;
+  --border: #e4d5ca;
+}

@@ -1,0 +1,9 @@
+[data-color="ink"] {
+  --background: #ffffff;
+  --surface: #f0f0f0;
+  --text: #202020;
+  --muted: #595959;
+  --accent: #353535;
+  --on-accent: #ffffff;
+  --border: #d5d5d5;
+}

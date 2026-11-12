@@ -1,0 +1,9 @@
+[data-color="slate"] {
+  --background: #f7f8fa;
+  --surface: #e9edf2;
+  --text: #243142;
+  --muted: #536174;
+  --accent: #345675;
+  --on-accent: #ffffff;
+  --border: #d4dce5;
+}

@@ -1,0 +1,4 @@
+[data-font="technical"] {
+  --font-heading: 'SFMono-Regular', Consolas, 'Liberation Mono', monospace;
+  --font-body: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}

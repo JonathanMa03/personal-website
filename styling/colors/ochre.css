@@ -1,0 +1,9 @@
+[data-color="ochre"] {
+  --background: #fcfaf3;
+  --surface: #f2ecd9;
+  --text: #373327;
+  --muted: #69614b;
+  --accent: #7c5b16;
+  --on-accent: #ffffff;
+  --border: #e1d8bd;
+}
